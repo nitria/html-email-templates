@@ -315,22 +315,36 @@
         .col-sm {
           max-width: 45% !important;
           display: inline-block !important;
+          margin: 0 10px !important;
+        }
+        table {
+          text-align: left !important;
         }
       }
     </style>
-    <!--[if (mso)|(mso 16)]>
+    <!--[if mso]>
       <style type="text/css">
-        body,
-        table,
-        td,
-        a,
-        span {
-          font-family: Arial, Helvetica, sans-serif !important;
+        table {
+          border-collapse: collapse;
+          border: 0;
+          border-spacing: 0;
+          margin: 0;
         }
-        a {
-          text-decoration: none;
+        div,
+        td {
+          padding: 0;
+        }
+        div {
+          margin: 0 !important;
         }
       </style>
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
     <![endif]-->
   </head>
 
@@ -392,15 +406,22 @@
                 <td
                   cellspacing="0"
                   cellpadding="0"
-                  style="border-collapse: collapse"
-                  width="600"
+                  style="
+                    border-collapse: collapse;
+                    width: 100%;
+                    max-width: 600px;
+                  "
+                  width="600px"
                 >
                   <div
                     style="
                       padding: 0;
                       text-align: center;
                       background-color: #ffffff;
+                      width: 100%;
+                      max-width: 600px;
                     "
+                    width="600px"
                     cellspacing="0"
                     cellpadding="0"
                   >
@@ -410,6 +431,7 @@
                       alt=""
                       width="100%"
                       height="auto"
+                      style="width: 100%; max-width: 600px"
                     />
                   </div>
                 </td>
@@ -452,16 +474,15 @@
               </tr>
               <!-- end: tr -->
               <tr>
-                <td class="bg_white email-section">
+                <td class="bg_white email-section" style="padding: 50px 0">
                   <table
                     role="presentation"
                     border="0"
                     cellpadding="0"
                     cellspacing="0"
-                    width="100%"
                   >
                     <tr>
-                      <td valign="top" width="50%" style="padding-top: 20px">
+                      <td valign="top">
                         <table
                           style="text-align: center"
                           dir="rtl"
@@ -470,45 +491,32 @@
                           cellspacing="0"
                           cellpadding="0"
                           border="0"
-                          width="100%"
                         >
                           <tr>
                             <td
                               class="col-sm"
                               dir="rtl"
-                              width="250"
-                              style="
-                                display: block;
-                                width: 100%;
-                                max-width: 200px;
-                                margin: 0 auto 20px;
-                              "
+                              width="50%"
+                              style="display: block; margin: 0 auto"
                             >
                               <img
-                                src="https://i.ibb.co/zfdZG6K/article1.jpg"
+                                src="https://i.ibb.co/2crQTMv/img1.jpg"
                                 alt=""
-                                width="200"
-                                style="
-                                  outline: none;
-                                  text-decoration: none;
-                                  clear: both;
-                                  width: 100%;
-                                  pointer-events: none;
-                                  display: block;
-                                "
+                                style="width: 100%"
+                                width="250"
                               />
                             </td>
                             <td
                               class="col-sm"
                               dir="ltr"
                               style="
-                                display: block;
-                                width: 100%;
-                                max-width: 250px;
                                 text-align: left;
-                                vertical-align: top;
+                                display: block;
                                 margin: 0 auto;
+                                max-width: 350px;
+                                width: 100%;
                               "
+                              width="50%"
                             >
                               <h1
                                 style="
@@ -579,7 +587,7 @@
               </tr>
               <!-- end: tr -->
               <tr>
-                <td class="bg_white email-section">
+                <td class="bg_white email-section" style="padding-bottom: 50px">
                   <table
                     role="presentation"
                     border="0"
@@ -588,7 +596,7 @@
                     width="100%"
                   >
                     <tr>
-                      <td valign="top" width="50%" style="padding-top: 20px">
+                      <td valign="top" width="50%">
                         <table
                           style="text-align: center"
                           align="center"
@@ -601,40 +609,26 @@
                           <tr>
                             <td
                               class="col-sm"
-                              width="250"
-                              style="
-                                margin: 0 auto;
-                                display: block;
-                                width: 100%;
-                                max-width: 200px;
-                                margin-bottom: 20px;
-                              "
+                              width="50%"
+                              style="display: block; margin: 0 auto"
                             >
                               <img
-                                src="https://i.ibb.co/JntK0bS/article2.jpg"
+                                src="https://i.ibb.co/XbYNNkJ/2.jpg"
                                 alt=""
-                                style="
-                                  outline: none;
-                                  text-decoration: none;
-                                  clear: both;
-                                  width: 100%;
-                                  pointer-events: none;
-                                  display: block;
-                                "
-                                width="200"
+                                style="width: 100%"
+                                width="250"
                               />
                             </td>
                             <td
                               class="col-sm"
                               style="
-                                margin: 0 auto;
-                                display: block;
-                                width: 100%;
-                                max-width: 250px;
                                 text-align: left;
-                                vertical-align: top;
-                                padding-left: 15px;
+                                display: block;
+                                margin: 0 auto;
+                                max-width: 350px;
+                                width: 100%;
                               "
+                              width="50%"
                             >
                               <h1
                                 style="
@@ -673,7 +667,40 @@
                                 aspernatur explicabo atque perspiciatis possimus
                                 voluptates.
                               </p>
-                              <a href="#" class="btn btn-primary">ABOUT US</a>
+
+                              <table
+                                style="text-align: left; margin: 0 !important"
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      background: #d29147;
+                                      display: inline-block;
+                                      padding: 5px 10px;
+                                      text-align: center;
+                                    "
+                                    width="120"
+                                  >
+                                    <!--[if gte mso]>
+        <table width="120" style="width:120px">
+          <tr>
+            <td>
+              <![endif]-->
+                                    <a href="#"
+                                      ><span
+                                        class="blank"
+                                        style="color: #ffffff"
+                                        >ABOUT US</span
+                                      >
+                                    </a>
+                                    <!--[if gte mso 9>
+           </td>
+         </tr>
+        </table>
+     <![endif]-->
+                                  </td>
+                                </tr>
+                              </table>
                             </td>
                           </tr>
                         </table>
@@ -715,18 +742,24 @@
                       >
                       OFF
                     </p>
-                    <a href="#"
-                      ><span
-                        class="blank"
-                        style="
-                          display: inline-block;
-                          background: #d29147;
-                          color: #f1f1f1;
-                          padding: 3px 15px;
-                        "
-                        >&nbsp;&nbsp;COUPON&nbsp;&nbsp;</span
-                      ></a
-                    >
+                    <table>
+                      <tr>
+                        <td
+                          style="
+                            display: inline-block;
+                            background: #d29147;
+
+                            padding: 3px 15px;
+                          "
+                        >
+                          <a href="#"
+                            ><span class="blank" style="color: #f1f1f1"
+                              >COUPON</span
+                            ></a
+                          >
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </td>
               </tr>
