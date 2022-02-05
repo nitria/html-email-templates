@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation - Index</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Index</h1>
+      </div>
+    </header>
+    <aside>
+      <ul>
+        <li><a href="#article1">Introduction</a></li>
+        <li><a href="#article2">How to send Email</a></li>
+        <li><a href="#article3">Customize</a></li>
+      </ul>
+    </aside>
+    <main class="docs">
+      <div class="container">
+        <article id="article1">
+          <h1>Introduction</h1>
+          <p>Christmas is a responsive html email template for e-shops. Knowledge of html and css is required for creating tables and styling them.
+            Tested with litmus( https://www.litmus.com/  ) and campaignmonitor (https://www.campaignmonitor.com/css).
+          </p>
+          <p>Folders and files that are included:
+            <ul>
+              <li>- index.html</li>
+              <li>- christmas.psd</li>
+              <li>- documentation(folder)</li>
+              <li>- images(folder)</li>
+            </ul>
+          </p>
+        </article>
+        <article id="article2">
+          <h1>How to send Email</h1>
+          <div>  
+          <h2>GMAIL & YAHOO</h2>
+          <p>1. Extract the nikolas.zip file.</p>
+          <p>2. Open index.html with your code editor and copy all html code.</p>
+          <p>3. Go to your gmail and compose a new mail.</p>
+          <p>4. In the message section right click and press inspect.</p>
+          <p>5. At the selected div in DevTools right click and select edit as html.</p>
+          <p>6. Paste the copied html code from index.html and click anywhere on the empty space to show your email</p>
+          <p>7. Add recipients and subject and send your email. That's it your done!</p>
+          </div>
+         <div>
+          <h2>OUTLOOK</h2>
+          <p>1. Extract the nikolas.zip file.</p>
+          <p>2. Press New Email</p>
+          <p>3. Press attach file(papper-clip icon).</p>
+          <p>4. Choose the index.html file and click the arrow on the insert button, select Insert as Text.</p>
+          <p>5. Add recipients and subject and send your email. That's it your done!</p>
+         </div>
+        </article>
+        <article id="article3">
+          <h1>Customize</h1>
+          <p>If using hex code for colors must be six character long e.g(#000000) not (#000). RGB is supported in most clients but RGBA not, so choose wisely.</p>
+          <p>Each section starts with <mark>table</mark> element:</p>
+          <pre style="font-size: 1.5rem;">
+            <code>
+              &#x3C;table&#x3E;
+                &#x3C;tr&#x3E;
+                  &#x3C;td&#x3E;
+                  Content here
+                  &#x3C;/td&#x3E;
+                &#x3C;/tr&#x3E;
+              &#x3C;/table&#x3E;
+            </code>
+          </pre>
+          <p>Besides adding width and height in styles always add width and height attributes without units in your tables and td's :</p>
+          <pre style="font-size: 1.5rem;">
+            <code>
+              &#x3C;table style="width: 600px;" width="600"&#x3E;
+                &#x3C;tr&#x3E;
+                  &#x3C;td style="width: 300px; height: 150px" width="300" height="150"&#x3E;
+                  Content here
+                  &#x3C;/td&#x3E;
+                &#x3C;/tr&#x3E;
+              &#x3C;/table&#x3E;
+            </code>
+          </pre>
+          <p>Some outlook clients have rendering issues so use the snippet below to fix them:</p>
+          <img src="images/code.png" alt="">
+          <p>Outlook doesnt support css background images so use vml(vector markup language) code</p>
+          <pre style="font-size: 1.5rem;">
+            <code>
+              &#x3C;v:image
+                  xmlns:v="urn:schemas-microsoft-com:vml"
+                  fill="true"
+                  stroke="false"
+                  style="
+                    border: 0;
+                    display: inline-block;
+                    width: 450pt;
+                    height: 540pt;
+                  "
+                  src="https://i.ibb.co/7QdM8zs/Merry-Christmas.jpg"
+                /&#x3E;
+                &#x3C;v:roundrect
+                  xmlns:v="urn:schemas-microsoft-com:vml"
+                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                  href="#"
+                  style="
+                    height: 36px;
+                    v-text-anchor: middle;
+                    width: 130px;
+                    position: absolute;
+                    left: 230px;
+                    top: 500px;
+                  "
+                  arcsize="1%"
+                  stroke="f"
+                  fillcolor="#ffffff"
+                  &#x3E;
+                  &#x3C;w:anchorlock /&#x3E;
+                  &#x3C;center
+                    style="
+                      color: #e74064;
+                      font-family: Helvetica, Arial, sans-serif;
+                      font-size: 18px;
+                    "
+                    &#x3E;
+                    Shop Now
+                    &#x3C;/center&#x3E;
+                    &#x3C;/v:roundrect&#x3E;            
+            </code>
+          </pre>
+          <p>Add urls to links.</p>
+          <p>To check for css properties go to <a href="https://www.campaignmonitor.com/css/">https://www.campaignmonitor.com/css/</a></p>
+        </article>
+        
+      </div>
+    </main>
+  </body>
+</html>

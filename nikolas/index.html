@@ -17,11 +17,6 @@
     <title>nikolas</title>
     <!-- The title tag shows in email notifications, like Android 4.4. -->
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i"
-      rel="stylesheet"
-    />
-
     <!-- CSS Reset : BEGIN -->
     <style>
       html,
@@ -31,6 +26,14 @@
         height: 100% !important;
         width: 100% !important;
         background: #f1f1f1;
+      }
+
+      span {
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
       }
 
       /* What it does: Stops email clients resizing small text. */
@@ -146,23 +149,13 @@
         padding: 8px;
       }
 
-      /*BUTTON*/
-      .btn {
-        padding: 10px 15px;
-      }
-      .btn.btn-primary {
-        border-radius: 30px;
-        background: #f3a333;
-        color: #ffffff;
-      }
-
       h1,
       h2,
       h3,
       h4,
       h5,
       h6 {
-        font-family: "Playfair Display", serif;
+        font-family: Arial, Helvetica, sans-serif;
         color: #000000;
         margin-top: 0;
       }
@@ -178,15 +171,13 @@
       a {
         color: #f3a333;
       }
+
+      /* Add to remove underlines in links*/
       .blank {
       }
 
       /*LOGO*/
-
-      .logo h1 {
-        margin: 0;
-      }
-      .logo h1 a {
+      .logo a {
         color: #ffffff;
         font-size: 20px;
         font-weight: 700;
@@ -194,121 +185,16 @@
         font-family: "Montserrat", sans-serif;
       }
 
-      /*HERO*/
-      .hero {
-        position: relative;
-      }
-
-      /*HEADING SECTION*/
-      /* .heading-section{
-} */
-      .heading-section h2 {
-        color: #000000;
-        font-size: 28px;
-        margin-top: 0;
-        line-height: 1.4;
-      }
-
-      .heading-section-white {
-        color: #000000;
-      }
-      .heading-section-white h2 {
-        font-size: 28px;
-        font-style: italic;
-        font-weight: 500;
-        line-height: 1;
-        padding-bottom: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .heading-section-white h2 {
-        color: #000000;
-      }
-
-      .icon {
-        text-align: center;
-      }
-
-      /*SERVICES*/
-      .text-services {
-        padding: 10px 10px 0;
-        text-align: center;
-      }
-      .text-services h3 {
-        font-size: 20px;
-      }
-
-      /*BLOG*/
-      .text-services .meta {
-        text-transform: uppercase;
-        font-size: 14px;
-      }
-
-      /*TESTIMONY*/
-      .text-testimony .name {
-        margin: 0;
-      }
-      .text-testimony .position {
-        color: rgba(0, 0, 0, 0.3);
-      }
-
-      /*VIDEO*/
       .img {
         width: 100%;
         height: auto;
         position: relative;
-      }
-      .img .icon {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin-top: -25px;
-      }
-      .img .icon a {
-        display: block;
-        width: 60px;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        margin-left: -25px;
-      }
-
-      /*COUNTER*/
-      .counter-text {
-        text-align: center;
-      }
-      .counter-text .num {
-        display: block;
-        color: #ffffff;
-        font-size: 34px;
-        font-weight: 700;
-      }
-      .counter-text .name {
-        display: block;
-        color: rgba(255, 255, 255, 0.9);
-        font-size: 13px;
       }
 
       /*FOOTER*/
 
       .footer {
         color: rgba(255, 255, 255, 0.5);
-      }
-      .footer .heading {
-        color: #ffffff;
-        font-size: 20px;
-      }
-      .footer ul {
-        margin: 0;
-        padding: 0;
-      }
-      .footer ul li {
-        list-style: none;
-        margin-bottom: 10px;
-      }
-      .footer ul li a {
-        color: rgba(255, 255, 255, 1);
       }
 
       @media screen and (min-width: 600px) {
@@ -384,23 +270,26 @@
       >
         <tr>
           <td
+            width="600"
             class="bg_black logo"
-            style="padding: 1em 2.5em; text-align: center"
+            style="padding: 1em 2.5em; text-align: center; width: 100%"
           >
-            <h1>
-              <a href="#"
-                ><img src="https://i.ibb.co/s9dT1dD/logo.png" alt="nikolas"
-              /></a>
-            </h1>
+            <a href="#"
+              ><img src="https://i.ibb.co/s9dT1dD/logo.png" alt="nikolas"
+            /></a>
           </td>
         </tr>
         <!-- end tr -->
         <tr>
-          <td valign="middle" cellspacing="0" cellpadding="0">
+          <td>
             <table
-              cellspacing="0"
+              role="presentation"
+              width="600"
+              style="width: 600px"
               cellpadding="0"
-              style="display: table; border-collapse: collapse"
+              cellspacing="0"
+              border="0"
+              align="center"
             >
               <tr>
                 <td
@@ -425,6 +314,17 @@
                     cellspacing="0"
                     cellpadding="0"
                   >
+                    <!--[if mso]>
+                      <img
+                        class="img"
+                        src="https://i.ibb.co/RCFmb6w/hero.jpg"
+                        alt=""
+                        width="100%"
+                        height="auto"
+                        style="width: 100%; max-width: 600px"
+                      />
+                    <![endif]-->
+                    <!--[if !mso]><!-->
                     <img
                       class="img"
                       src="https://i.ibb.co/RCFmb6w/hero.jpg"
@@ -433,6 +333,7 @@
                       height="auto"
                       style="width: 100%; max-width: 600px"
                     />
+                    <!--<![endif]-->
                   </div>
                 </td>
               </tr>
@@ -450,7 +351,7 @@
               width="100%"
             >
               <tr>
-                <td class="bg_white email-section" style="padding: 0 25px">
+                <td class="bg_white email-section" style="padding: 0 24px">
                   <table>
                     <tr>
                       <td
@@ -499,12 +400,22 @@
                               width="50%"
                               style="display: block; margin: 0 auto"
                             >
+                              <!--[if mso]>
+                                <img
+                                  src="https://i.ibb.co/2crQTMv/img1.jpg"
+                                  alt=""
+                                  style="width: 100%"
+                                  width="250"
+                                />
+                              <![endif]-->
+                              <!--[if !mso]><!-->
                               <img
                                 src="https://i.ibb.co/2crQTMv/img1.jpg"
                                 alt=""
                                 style="width: 100%"
                                 width="250"
                               />
+                              <!--<![endif]-->
                             </td>
                             <td
                               class="col-sm"
@@ -612,12 +523,22 @@
                               width="50%"
                               style="display: block; margin: 0 auto"
                             >
+                              <!--[if mso]>
+                                <img
+                                  src="https://i.ibb.co/XbYNNkJ/2.jpg"
+                                  alt=""
+                                  style="width: 100%"
+                                  width="250"
+                                />
+                              <![endif]-->
+                              <!--[if !mso]><!-->
                               <img
                                 src="https://i.ibb.co/XbYNNkJ/2.jpg"
                                 alt=""
                                 style="width: 100%"
                                 width="250"
                               />
+                              <!--<![endif]-->
                             </td>
                             <td
                               class="col-sm"
